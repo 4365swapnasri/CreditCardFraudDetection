@@ -1,0 +1,104 @@
+/* style2.css */
+
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url("../static/OIP.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 5px;
+    padding-top: 100px;
+  }
+/* Set a background color for the body */
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-content {
+    text-align: center;
+    background-image: url("../static/OIP.jpeg");
+    background-repeat: no-repeat;
+
+}
+
+.main-text {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.main-text h1 {
+    color: #333;
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+.main-text h3 {
+    color: #555;
+}
+
+.main-text img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.right {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.box {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-right: 20px;
+    text-align: center;
+}
+
+.box .image {
+    font-size: 48px;
+    color: #007bff;
+}
+
+.box h1 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.box h2 {
+    color: #555;
+}
+
+.box p {
+    margin-top: 10px;
+    color: #777;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+}

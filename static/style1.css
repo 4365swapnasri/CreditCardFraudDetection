@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+body {
+    background-image: url("../static/OIP.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 5px;
+    padding-top: 100px;
+  }
+
+.container {
+    background-color: #fff;
+    padding: 0px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding-left: 0px;
+}
+
+h1 {
+    color: #4a90e2;
+}
+
+p {
+    font-size: 24px;
+}
+
+/* Add animation for the fraud detection elements */
+.fraud-icon img {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Style the fraud detection elements */
+.fraud-icon img {
+    display: inline-block;
+    width: 100px; /* Adjust the size as needed */
+    height: auto;
+}
+

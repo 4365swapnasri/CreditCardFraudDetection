@@ -1,0 +1,109 @@
+/* Reset default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a background image for the entire page */
+body {
+  background-image: url("../static/INPUT.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 10px;
+}
+
+/* Center-align the form within a container */
+.container {
+  max-width: 500px;
+  width: 100%;
+  padding: 25px 30px;
+  background-color: #ccd4c0;
+  border-radius: 20px;
+}
+
+/* Style the form title */
+.container h1 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+/* Style form groups for input elements */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: 500;
+  display: block;
+}
+
+.form-group input {
+  height: 50px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 15px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Highlight input fields on focus and when they contain data */
+.form-group input:focus,
+.form-group input:valid {
+  border-color: #abcdc0;
+}
+
+/* Style the form submit button */
+.center-button {
+  text-align: center;
+}
+
+.center-button input[type="submit"] {
+  width: 100%;
+  height: 40px;
+  margin: 20px 0;
+  outline: none;
+  cursor: pointer;
+  background: #498f75;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+}
+
+.center-button input[type="submit"]:hover {
+  background-color: #498f75;
+}
+
+/* Add responsive styling for smaller screens */
+@media (max-width: 584px) {
+  .container {
+      max-width: 100%;
+  }
+
+  .form-group {
+      margin-bottom: 10px;
+      width: 90%;
+  }
+
+  .container form {
+      max-height: 400px;
+      overflow-y: scroll;
+  }
+
+  .container form::-webkit-scrollbar {
+      width: 0;
+  }
+}
+h1{
+  align-items: center;
+}
