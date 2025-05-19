@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ANOMALY-DETECTION</title>
+  <link rel="stylesheet" href="static/style.css" />
+  <style>
+     * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+  }
+
+  .container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), transparent),
+      url(https://tse4.mm.bing.net/th?id=OIP.xddyM5Z5llwe5nz0xAnhvAHaD_&pid=Api&P=0&h=220);
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+  }
+
+  h1 {
+    font-size: 60px;
+    font-family: "bradley hand"; /* Adjust the font size as needed */
+    color: #fff;
+    margin-top: 20px; /* Add top margin as needed */
+  }
+
+  nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+  }
+
+  nav img {
+    width: 300px;
+    height: 150px;
+  }
+
+  nav ul {
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+  }
+
+  nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 5px 20px;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+  }
+
+  nav ul li a::after {
+    content: '';
+    width: 50%;
+    height: 3px;
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    transition: width 0.5s;
+  }
+
+  nav ul li a:hover::after {
+    width: 50%;
+  }
+
+  .text-box {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .text-box h1 {
+  font-size: 100px;
+  line-height: 160px;
+  margin: 0;
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  background-image: url(https://tse4.mm.bing.net/th?id=OIP.mStCHTa7tLEi8TlRT5tpJQHaFK&pid=Api&P=0&h=220);
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 20s linear infinite;
+}
+
+
+  @keyframes back {
+    100% {
+      background-position: 2000px 0;
+    }
+  }
+
+  .text-box h3 {
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  .text-box.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+
+  .text-box a {
+    color: #fff;
+    padding: 10px 10px;
+    margin-right: 20px;
+    margin-top: 5px;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+  }
+
+   /* Styles for the slideshow container */
+.slideshow-container {
+  max-width: 800px; /* Increase the width of the slideshow container to your desired value */
+  margin: auto;
+  width: fit-content;
+}
+
+/* Style the images to fit the container without zooming */
+.mySlides img {
+  max-width: 100%; /* Ensure the image fits within the container */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Center the image horizontally */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+    /* Style the navigation dots */
+    .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active {
+      background-color: #717171;
+    }
+    ul{
+      display: flex;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      
+      <ul>
+        <li>
+          <h1>WELCOME</h1>
+        </li>
+        <li>
+            <h1> <a href="./about">project</a></h1>
+            </li>
+            
+        </ul>
+    </nav>
+    <div class="text-box">
+          <h1>fraud detetction</h1> 
+          <h3>creditcard fraud detetction</h3>
+
+          <div class="row">
+          <a href="https://www.linkedin.com/in/udi-rohini-55843a246">connect with me <span>&#x27F6</span></a>
+          </div>          
+    </div>
+</div>
+  <div class="slideshow-container">
+    <!-- Slides -->
+    <div class="mySlides fade">
+      <img src="../static/download-imag.jpeg" alt="Image 1">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="../static/download.jpeg" alt="Image 2">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="../static/project1.jpeg" alt="Image 3">
+    </div>
+
+    <!-- Navigation dots -->
+    <div style="text-align: center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+    
+  </div>
+
+  <!-- JavaScript for the slideshow functionality -->
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      const slides = document.getElementsByClassName("mySlides");
+      const dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+  </script>
+</body>
+</html>
